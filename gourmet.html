@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gourmet</title>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+            padding: 0;
+        }
+
+        .htextes {
+            display: flex;
+            justify-content: space-between;
+            /* align-items: end; */
+            flex-direction: column-reverse;
+
+        }
+
+        .list {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .htext {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .dv {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .htext2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+
+        let main = document.createElement("div")
+
+        console.log(main);
+
+        main.style.height = "100vh"
+        main.style.width = "100%"
+        // main.style.border = "1px solid"
+        main.style.backgroundImage = "url(https://www.w3schools.com/w3images/hamburger.jpg)"
+
+
+        document.body.appendChild(main)
+
+
+
+
+        let word = document.createElement("h1")
+        main.appendChild(word)
+        word.innerHTML = "Le Catering"
+
+        word.style.fontFamily = "Times New Roman, Georgia, serif"
+        word.style.fontSize = "55px"
+        word.style.fontWeight = "400"
+        main.setAttribute("class", "htextes")
+
+
+
+
+
+        let navbar = document.createElement("div")
+
+        // console.log(nav1);
+
+        navbar.style.height = "12vh"
+        navbar.style.width = "100%"
+        navbar.style.background = "white"
+
+
+        navbar.setAttribute("class", "list")
+
+
+        main.appendChild(navbar)
+
+
+        let box = document.createElement("div")
+
+        box.style.height = "8vh"
+        box.style.width = "18%"
+        // box.style.border = "1px solid"
+        navbar.appendChild(box)
+
+
+
+        let heading = document.createElement("h1")
+        box.appendChild(heading)
+        heading.innerHTML = "Gourmet au Catering"
+
+        heading.style.fontFamily = "Times New Roman, Georgia, serif"
+        heading.style.fontSize = "19px"
+        heading.style.fontWeight = "400"
+        box.setAttribute("class", "htext")
+
+        let box2 = document.createElement("div")
+
+        box2.style.height = "8vh"
+        box2.style.width = "28%"
+        // box2.style.border = "1px solid"
+
+        box2.setAttribute("class", "dv")
+        navbar.appendChild(box2)
+
+        let box3 = document.createElement("div")
+
+        box3.style.height = "8vh"
+        box3.style.width = "28%"
+        // box3.style.border = "1px solid"
+
+        box2.appendChild(box3)
+
+
+        let heading2 = document.createElement("h1")
+        box3.appendChild(heading2)
+        heading2.innerHTML = "About"
+
+        heading2.style.fontFamily = "Times New Roman, Georgia, serif"
+        heading2.style.fontSize = "15px"
+        heading2.style.fontWeight = "400"
+        box3.setAttribute("class", "htext2")
+
+
+
+
+
+
+        let box4 = document.createElement("div")
+
+        box4.style.height = "8vh"
+        box4.style.width = "28%"
+        // box4.style.border = "1px solid"
+
+        box2.appendChild(box4)
+
+        let heading3 = document.createElement("h1")
+        box4.appendChild(heading3)
+        heading3.innerHTML = "Menu"
+
+        heading3.style.fontFamily = "Times New Roman, Georgia, serif"
+        heading3.style.fontSize = "15px"
+        heading3.style.fontWeight = "400"
+        box4.setAttribute("class", "htext2")
+
+        let box5 = document.createElement("div")
+
+        box5.style.height = "8vh"
+        box5.style.width = "28%"
+        // box5.style.border = "1px solid"
+        box2.appendChild(box5)
+
+        let heading4 = document.createElement("h1")
+        box5.appendChild(heading4)
+        heading4.innerHTML = "Contact"
+
+        heading4.style.fontFamily = "Times New Roman, Georgia, serif"
+        heading4.style.fontSize = "15px"
+        heading4.style.fontWeight = "400"
+        box5.setAttribute("class", "htext2")
+
+
+        let max = document.createElement("div")
+
+        console.log(max);
+
+        max.style.height = "auto"
+        max.style.width = "100%"
+        max.style.paddingTop = "80px"
+        max.style.paddingBottom = "80px"
+        // max.style.border = "1px solid"
+        max.style.display = "flex"
+        max.style.justifyContent = "space-around"
+        max.style.alignItems = "center"
+        max.style.paddingLeft = "50px"
+
+
+        document.body.appendChild(max)
+
+
+        let smallbox = document.createElement("div")
+
+        smallbox.style.height = "95vh"
+        smallbox.style.width = "35%"
+        // smallbox.style.border = "1px solid"
+
+        max.appendChild(smallbox)
+
+
+        let image = document.createElement("img")
+
+        console.log(image);
+
+        image.setAttribute("src", "https://www.w3schools.com/w3images/tablesetting2.jpg")
+        image.setAttribute("alt", "Mountain")
+        image.style.height = "100%"
+        image.style.width = "100%"
+        smallbox.appendChild(image)
+
+
+
+
+        let smallbox2 = document.createElement("div")
+
+        smallbox2.style.height = "95vh"
+        smallbox2.style.width = "50%"
+        // smallbox2.style.border = "1px solid"
+        smallbox2.style.display = "flex"
+        smallbox2.style.alignItems = "center"
+        smallbox2.style.flexDirection = "column"
+
+
+        max.appendChild(smallbox2)
+
+
+        let minibox = document.createElement("div")
+
+        minibox.style.height = "25vh"
+        minibox.style.width = "60%"
+        // minibox.style.border = "1px solid"
+        minibox.style.display = "flex"
+        minibox.style.flexDirection = "column"
+        minibox.style.justifyContent = "space-between"
+        minibox.style.alignItems = "center"
+
+        smallbox2.appendChild(minibox)
+
+
+        let textbox = document.createElement("div")
+
+        textbox.style.height = "10vh"
+        textbox.style.width = "80%"
+        // textbox.style.border = "1px solid"
+        textbox.style.display = "flex"
+        textbox.style.justifyContent = "center"
+
+        minibox.appendChild(textbox)
+
+        let text = document.createElement("h1")
+        textbox.appendChild(text)
+        textbox.innerHTML = "About Catering"
+
+        textbox.style.fontFamily = "Playfair Display"
+        textbox.style.fontSize = "36px"
+        textbox.style.fontWeight = "400"
+
+        textbox.appendChild(text)
+
+
+
+
+        let textbox2 = document.createElement("div")
+
+        textbox2.style.height = "8vh"
+        textbox2.style.width = "80%"
+        // textbox2.style.border = "1px solid"
+        textbox2.style.display = "flex"
+        textbox2.style.justifyContent = "center"
+
+        minibox.appendChild(textbox2)
+
+        let text2 = document.createElement("h1")
+        textbox2.appendChild(text2)
+        textbox2.innerHTML = "Tradition since 1889"
+
+        textbox2.style.fontFamily = "Playfair Display"
+        textbox2.style.fontSize = "18px"
+        textbox2.style.fontWeight = "400"
+
+        textbox2.appendChild(text2)
+
+
+
+
+        let minibox2 = document.createElement("div")
+
+        minibox2.style.height = "70vh"
+        minibox2.style.width = "100%"
+        // minibox2.style.border = "1px solid"
+
+        smallbox2.appendChild(minibox2)
+
+
+        let parabox = document.createElement("div")
+
+        parabox.style.height = "34vh"
+        parabox.style.width = "100%"
+        // parabox.style.border = "1px solid"
+
+        minibox2.appendChild(parabox)
+
+
+        let para = document.createElement("p")
+        parabox.appendChild(para)
+        parabox.innerHTML = "The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.We only use seasonal ingredients."
+        parabox.style.fontFamily = "Playfair Display"
+        parabox.style.fontSize = "18px"
+        parabox.style.fontWeight = "400"
+        parabox.style.lineHeight = "27px"
+
+
+
+
+        let parabox2 = document.createElement("div")
+
+        parabox2.style.height = "30vh"
+        parabox2.style.width = "100%"
+        // parabox2.style.border = "1px solid"
+
+        minibox2.appendChild(parabox2)
+
+        let para2 = document.createElement("p")
+        parabox2.innerHTML = "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        parabox2.style.fontFamily = "Playfair Display"
+        parabox2.style.fontSize = "18px"
+        parabox2.style.fontWeight = "400"
+        parabox2.style.lineHeight = "27px"
+        parabox2.style.color = "gray"
+        parabox2.appendChild(para2)
+
+
+
+
+        let max2 = document.createElement("div")
+
+        console.log(max2);
+
+        max2.style.height = "auto"
+        max2.style.width = "100%"
+        max2.style.paddingTop = "80px"
+        max2.style.paddingBottom = "80px"
+        // max2.style.border = "1px solid"
+        max2.style.display = "flex"
+        max2.style.justifyContent = "space-around"
+        max2.style.alignItems = "center"
+        max2.style.paddingLeft = "50px"
+
+        document.body.appendChild(max2)
+
+
+        let smallbox3 = document.createElement("div")
+
+        smallbox3.style.height = "95vh"
+        smallbox3.style.width = "50%"
+        // smallbox3.style.border = "1px solid"
+        smallbox3.style.display = "flex"
+        smallbox3.style.justifyContent = "space-between"
+        smallbox3.style.alignItems = "center"
+        smallbox3.style.flexDirection = "column"
+
+
+        max2.appendChild(smallbox3)
+
+
+        let headingbox = document.createElement("div")
+
+        headingbox.style.height = "10vh"
+        headingbox.style.width = "50%"
+        // headingbox.style.border = "1px solid"
+
+        smallbox3.appendChild(headingbox)
+
+
+        let textbox3 = document.createElement("div")
+
+        textbox3.style.height = "80vh"
+        textbox3.style.width = "100%"
+        textbox3.style.display = "flex"
+        textbox3.style.flexDirection = "column"
+        textbox3.style.justifyContent = "space-between"
+
+        // textbox3.style.border = "1px solid"
+
+        smallbox3.appendChild(textbox3)
+
+
+        let bar = document.createElement("div")
+
+        bar.style.height = "15vh"
+        bar.style.width = "100%"
+        // bar.style.border = "1px solid"
+
+        textbox3.appendChild(bar)
+
+
+        let box6 = document.createElement("div")
+
+        box6.style.height = "7vh"
+        box6.style.width = "30%"
+        // box6.style.border = "1px solid"
+
+        bar.appendChild(box6)
+
+        let text4 = document.createElement("h1")
+
+        box6.innerHTML = ("Bread Basket")
+        box6.style.fontFamily = "Playfair Display"
+        box6.style.fontSize = "20px"
+
+        box6.appendChild(text4)
+
+
+
+        let box7 = document.createElement("div")
+
+        box7.style.height = "7vh"
+        box7.style.width = "80%"
+        // box7.style.border = "1px solid"
+
+        bar.appendChild(box7)
+
+
+        let para3 = document.createElement("h1")
+
+        box7.innerHTML = ("Assortment of fresh baked fruit breads and muffins 5.50")
+        box7.style.fontFamily = "Playfair Display"
+        box7.style.fontSize = "15px"
+        box7.style.lineHeight = "22px"
+
+        bar.appendChild(para3)
+
+
+        let bar2 = document.createElement("div")
+
+        bar2.style.height = "15vh"
+        bar2.style.width = "100%"
+        // bar2.style.border = "1px solid"
+
+        textbox3.appendChild(bar2)
+
+        let box8 = document.createElement("div")
+
+        box8.style.height = "7vh"
+        box8.style.width = "30%"
+        // box8.style.border = "1px solid"
+
+        bar2.appendChild(box8)
+
+        let text5 = document.createElement("h1")
+
+        box8.innerHTML = ("Bread Basket")
+        box8.style.fontFamily = "Playfair Display"
+        box8.style.fontSize = "20px"
+
+        box8.appendChild(text5)
+
+
+        let box9 = document.createElement("div")
+
+        box9.style.height = "7vh"
+        box9.style.width = "80%"
+        // box9.style.border = "1px solid"
+
+        bar2.appendChild(box9)
+
+
+        let para4 = document.createElement("h1")
+
+        box9.innerHTML = ("Natural cereal of honey toasted oats, raisins, almonds and dates 7.00")
+        box9.style.fontFamily = "Playfair Display"
+        box9.style.fontSize = "15px"
+        box9.style.lineHeight = "22px"
+
+        box9.appendChild(para4)
+
+
+
+        let bar3 = document.createElement("div")
+
+        bar3.style.height = "15vh"
+        bar3.style.width = "100%"
+        // bar3.style.border = "1px solid"
+
+        textbox3.appendChild(bar3)
+
+
+
+
+        let box10 = document.createElement("div")
+
+        box10.style.height = "7vh"
+        box10.style.width = "30%"
+        // box10.style.border = "1px solid"
+
+        bar3.appendChild(box10)
+
+
+        let text6 = document.createElement("h1")
+
+        box10.innerHTML = ("Bread Basket")
+        box10.style.fontFamily = "Playfair Display"
+        box10.style.fontSize = "20px"
+
+        box10.appendChild(text6)
+
+        let box11 = document.createElement("div")
+
+        box11.style.height = "7vh"
+        box11.style.width = "80%"
+        // box11.style.border = "1px solid"
+
+        bar3.appendChild(box11)
+
+        let para5 = document.createElement("h1")
+
+        box11.innerHTML = ("Vanilla flavored batter with malted flour 7.50")
+        box11.style.fontFamily = "Playfair Display"
+        box11.style.fontSize = "15px"
+        box11.style.lineHeight = "22px"
+
+        box11.appendChild(para5)
+
+
+
+
+        let bar4 = document.createElement("div")
+
+        bar4.style.height = "15vh"
+        bar4.style.width = "100%"
+        // bar4.style.border = "1px solid"
+
+        textbox3.appendChild(bar4)
+
+
+
+
+        let box12 = document.createElement("div")
+
+        box12.style.height = "7vh"
+        box12.style.width = "30%"
+        // box12.style.border = "1px solid"
+
+        bar4.appendChild(box12)
+
+        let text7 = document.createElement("h1")
+
+        box12.innerHTML = ("Bread Basket")
+        box12.style.fontFamily = "Playfair Display"
+        box12.style.fontSize = "20px"
+
+        box12.appendChild(text7)
+
+
+        let box13 = document.createElement("div")
+
+        box13.style.height = "7vh"
+        box13.style.width = "80%"
+        // box13.style.border = "1px solid"
+
+        bar4.appendChild(box13)
+
+        let para6 = document.createElement("h1")
+
+        box13.innerHTML = ("Scrambled eggs, roasted red pepper and garlic, with green onions 7.50")
+        box13.style.fontFamily = "Playfair Display"
+        box13.style.fontSize = "15px"
+        box13.style.lineHeight = "22px"
+
+        box13.appendChild(para6)
+
+
+
+        let bar5 = document.createElement("div")
+
+        bar5.style.height = "15vh"
+        bar5.style.width = "100%"
+        // bar5.style.border = "1px solid"
+
+        textbox3.appendChild(bar5)
+
+
+
+
+
+        let box14 = document.createElement("div")
+
+        box14.style.height = "7vh"
+        box14.style.width = "30%"
+        // box14.style.border = "1px solid"
+
+        bar5.appendChild(box14)
+
+        let text8 = document.createElement("h1")
+
+        box14.innerHTML = ("Bread Basket")
+        box14.style.fontFamily = "Playfair Display"
+        box14.style.fontSize = "20px"
+
+        box14.appendChild(text8)
+
+
+        let box15 = document.createElement("div")
+
+        box15.style.height = "7vh"
+        box15.style.width = "80%"
+        // box15.style.border = "1px solid"
+
+        bar5.appendChild(box15)
+
+        let para8 = document.createElement("h1")
+
+        box15.innerHTML = ("With syrup, butter and lots of berries 8.50")
+        box15.style.fontFamily = "Playfair Display"
+        box15.style.fontSize = "15px"
+        box15.style.lineHeight = "22px"
+
+        box15.appendChild(para8)
+
+
+
+
+
+        let smallbox4 = document.createElement("div")
+
+        smallbox4.style.height = "95vh"
+        smallbox4.style.width = "35%"
+        // smallbox4.style.border = "1px solid"
+
+        max2.appendChild(smallbox4)
+
+        let image2 = document.createElement("img")
+
+        console.log(image2);
+
+        image2.setAttribute("src", "https://www.w3schools.com/w3images/tablesetting.jpg")
+        image2.setAttribute("alt", "Mountain")
+        image2.style.height = "100%"
+        image2.style.width = "100%"
+        smallbox4.appendChild(image2)
+
+
+
+
+
+        let max3 = document.createElement("div")
+
+        console.log(max3);
+
+        max3.style.height = "100vh"
+        max3.style.width = "100%"
+        // max3.style.paddingTop = "80px"
+        // max3.style.paddingBottom = "80px"
+        // max3.style.border = "1px solid"
+        max3.style.display = "flex"
+        max3.style.justifyContent = "center"
+        max3.style.alignItems = "center"
+        max3.style.flexDirection = "column"
+
+
+        document.body.appendChild(max3)
+
+
+
+        let childbox = document.createElement("div")
+
+        childbox.style.height = "45vh"
+        childbox.style.width = "85%"
+        childbox.style.display = "flex"
+        childbox.style.justifyContent = "space-between"
+        childbox.style.flexDirection = "column"
+        // childbox.style.border = "1px solid"
+
+
+        max3.appendChild(childbox)
+
+
+        let small = document.createElement("div")
+
+        small.style.height = "10vh"
+        small.style.width = "20%"
+        // small.style.border = "1px solid"
+
+        childbox.appendChild(small)
+
+        let text9 = document.createElement("h1")
+
+        small.innerHTML = ("Contact")
+        small.style.fontFamily = "Playfair Display"
+        small.style.fontSize = "36px"
+
+        small.appendChild(text9)
+
+
+
+        let small2 = document.createElement("div")
+
+        small2.style.height = "10vh"
+        small2.style.width = "100%"
+        // small2.style.border = "1px solid"
+
+        childbox.appendChild(small2)
+
+        let para9 = document.createElement("h1")
+
+        small2.innerHTML = ("We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to contact us.")
+        small2.style.fontFamily = "Playfair Display"
+        small2.style.fontSize = "15px"
+        small2.style.lineHeight = "22px"
+
+        small2.appendChild(para9)
+
+
+        let small3 = document.createElement("div")
+
+        small3.style.height = "10vh"
+        small3.style.width = "50%"
+        // small3.style.border = "1px solid"
+
+        childbox.appendChild(small3)
+
+        let para10 = document.createElement("h1")
+
+        small3.innerHTML = ("Catering Service, 42nd Living St, 43043 New York, NY")
+        small3.style.fontFamily = "Playfair Display"
+        small3.style.fontSize = "18px"
+        small3.style.fontWeight = "bold"
+        small3.style.lineHeight = "22px"
+        small3.style.color = "rgb(96,125,139)"
+
+        small3.appendChild(para10)
+
+        let small4 = document.createElement("div")
+
+        small4.style.height = "10vh"
+        small4.style.width = "70%"
+        // small4.style.border = "1px solid"
+
+        childbox.appendChild(small4)
+
+        let para11 = document.createElement("h1")
+
+        small4.innerHTML = ("You can also contact us by phone 00553123-2323 or email catering@catering.com, or you can send us a message here:")
+        small4.style.fontFamily = "Playfair Display"
+        small4.style.fontSize = "15px"
+
+        small4.style.lineHeight = "22px"
+
+
+        small4.appendChild(para11)
+
+
+        let childbox2 = document.createElement("div")
+
+        childbox2.style.height = "60vh"
+        childbox2.style.width = "85%"
+        childbox2.style.display = "flex"
+        childbox2.style.flexDirection = "column"
+        childbox2.style.justifyContent = "space-between"
+
+        // childbox2.style.border = "1px solid"
+
+        max3.appendChild(childbox2)
+
+
+        let long = document.createElement("div")
+
+        long.style.height = "10vh"
+        long.style.width = "100%"
+        // long.style.border = "1px solid "
+
+        childbox2.appendChild(long)
+
+        let inp = document.createElement("input")
+
+        inp.style.height = "10vh"
+        inp.style.width = "100%"
+        inp.style.paddingLeft = "20px"
+
+
+        long.appendChild(inp)
+
+        inp.setAttribute("placeholder", "Name")
+
+
+
+
+        let long2 = document.createElement("div")
+
+        long2.style.height = "10vh"
+        long2.style.width = "100%"
+        // long2.style.border = "1px solid "
+
+        childbox2.appendChild(long2)
+
+        let inp2 = document.createElement("input")
+
+        inp2.style.height = "10vh"
+        inp2.style.width = "100%"
+        inp2.style.paddingLeft = "20px"
+
+
+        long2.appendChild(inp2)
+
+        inp2.setAttribute("placeholder", "How many people")
+
+        let long3 = document.createElement("div")
+
+        long3.style.height = "10vh"
+        long3.style.width = "100%"
+        // long3.style.border = "1px solid "
+
+        childbox2.appendChild(long3)
+
+
+        let inp3 = document.createElement("input")
+
+        inp3.style.height = "10vh"
+        inp3.style.width = "100%"
+        inp3.style.paddingLeft = "20px"
+
+
+        long3.appendChild(inp3)
+
+        inp3.setAttribute("placeholder", "11/16/2020 08:00 PM")
+
+        let long4 = document.createElement("div")
+
+        long4.style.height = "10vh"
+        long4.style.width = "100%"
+        // long4.style.border = "1px solid "
+
+        childbox2.appendChild(long4)
+
+        let inp4 = document.createElement("input")
+
+        inp4.style.height = "10vh"
+        inp4.style.width = "100%"
+        inp4.style.paddingLeft = "20px"
+
+
+        long4.appendChild(inp4)
+
+        inp4.setAttribute("placeholder", "Message / Special requirement")
+
+
+
+        let bbox = document.createElement("div")
+
+        bbox.style.height = "8vh"
+        bbox.style.width = "14%"
+        bbox.style.display = "flex"
+        bbox.style.justifyContent = "center"
+        bbox.style.alignItems = "center"
+        bbox.style.background = "rgb(241,241,241)"
+        // bbox.style.border = "1px solid"
+
+        childbox2.appendChild(bbox)
+
+        let text10 = document.createElement("h1")
+
+        bbox.innerHTML = ("SEND MESSAGE")
+        bbox.style.fontFamily = "Playfair Display"
+        bbox.style.fontSize = "15px"
+
+        bbox.appendChild(text10)
+
+
+
+
+        let last = document.createElement("div")
+
+        last.style.height = "20vh"
+        last.style.width = "100%"
+        last.style.display = "flex"
+        last.style.justifyContent = "center"
+        last.style.alignItems = "center"
+
+        // last.style.border = "1px solid"
+
+        document.body.appendChild(last)
+
+        let lastbox = document.createElement("div")
+
+        lastbox.style.height = "10vh"
+        lastbox.style.width = "20%"
+        lastbox.style.display = "flex"
+        lastbox.style.justifyContent = "center"
+        lastbox.style.alignItems = "center"
+
+        // lastbox.style.border = "1px solid"
+
+        last.appendChild(lastbox)
+
+
+
+        let para12 = document.createElement("h1")
+
+        lastbox.innerHTML = ("Powered by w3.css")
+        lastbox.style.fontFamily = "Playfair Display"
+        lastbox.style.fontSize = "18px"
+        lastbox.style.fontWeight = "bold"
+        lastbox.style.lineHeight = "22px"
+        
+
+        lastbox.appendChild(para12)
+
+
+    </script>
+</body>
+
+</html>
